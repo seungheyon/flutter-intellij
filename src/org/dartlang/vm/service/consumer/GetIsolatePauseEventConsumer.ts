@@ -11,15 +11,15 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.dartlang.vm.service.consumer;
+package org.dart.vm.service.consome;
 
-import org.dartlang.vm.service.element.Event;
-import org.dartlang.vm.service.element.Sentinel;
+import org.dart.vm.service.element.Event;
+import org.dart.vm.service.element.Sentinel;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
-public interface GetIsolatePauseEventConsumer extends Consumer {
+public interface GetIsolatePauseEventConsumer extends Consome {
 
-  void received(Event response);
+   received(Event response);
 
-  void received(Sentinel response);
+   received(Sentinel response);
 }
